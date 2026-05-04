@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>THE ACCUMULATION</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
 </head>
 <body>
-  <div id="layout">
-    <div id="game-container"></div>
+  <div id="app">
+    <div id="world-panel">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div id="hud-top">A/D or ←/→ move • W/↑/Space jump • E interact • Tab analytics</div>
+      <div id="dialogue" class="hidden">
+        <div id="npc-name"></div>
+        <div id="dialogue-text"></div>
+        <div id="choices"></div>
+      </div>
+      <div id="ending" class="hidden"></div>
+    </div>
     <aside id="dashboard">
       <h1>THE ACCUMULATION</h1>
-      <pre id="dash-lines"></pre>
-      <section id="dialogue" class="panel hidden">
-        <h2 id="npc-name"></h2>
-        <p id="dialogue-text"></p>
-        <div id="choices"></div>
-      </section>
-      <section id="analytics" class="panel hidden">
-        <h2>Analytics</h2>
+      <div class="screen">
+        <div id="dash-lines"></div>
+      </div>
+      <div id="analytics" class="hidden">
+        <h2>Analytics Log</h2>
         <ul id="analytics-list"></ul>
-      </section>
-      <p id="help">Move: A/D or ←/→, Jump: W/↑/Space, Interact: E, Analytics: Tab</p>
+      </div>
     </aside>
   </div>
   <script src="game.js"></script>
