@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE ACCUMULATION</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="layout">
+    <div id="game-container"></div>
+    <aside id="dashboard">
+      <h1>THE ACCUMULATION</h1>
+      <pre id="dash-lines"></pre>
+      <section id="dialogue" class="panel hidden">
+        <h2 id="npc-name"></h2>
+        <p id="dialogue-text"></p>
+        <div id="choices"></div>
+      </section>
+      <section id="analytics" class="panel hidden">
+        <h2>Analytics</h2>
+        <ul id="analytics-list"></ul>
+      </section>
+      <p id="help">Move: A/D or ←/→, Jump: W/↑/Space, Interact: E, Analytics: Tab</p>
+    </aside>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

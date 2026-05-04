@@ -1,0 +1,14 @@
+* { box-sizing: border-box; font-family: "Courier New", monospace; }
+body { margin: 0; background: #0b0e13; color: #d8e4ff; }
+#layout { display: flex; min-height: 100vh; }
+#game-container { flex: 2; min-width: 66vw; border-right: 2px solid #30394f; }
+#dashboard { flex: 1; padding: 12px; background: #0f141f; }
+#dashboard h1 { margin: 0 0 10px; font-size: 20px; }
+#dash-lines { min-height: 260px; padding: 10px; margin: 0; color: #9efab5; background: linear-gradient(#07220f,#05120a); border: 2px solid #24543a; white-space: pre-wrap; }
+.panel { margin-top: 10px; background: #121b2b; border: 1px solid #33496f; padding: 10px; }
+.panel h2 { margin: 0 0 8px; font-size: 16px; color: #ffe697; }
+#choices button { width: 100%; text-align: left; margin-top: 6px; padding: 8px; background: #1c2a44; color: #f4f8ff; border: 1px solid #6f87b8; cursor: pointer; }
+#choices button:hover { background: #2a3d61; }
+#analytics-list { margin: 0; padding-left: 18px; max-height: 180px; overflow: auto; }
+#help { margin-top: 12px; font-size: 12px; color: #b5c1da; }
+.hidden { display: none; }
