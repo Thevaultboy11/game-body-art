@@ -1,4 +1,20 @@
-* { box-sizing: border-box; }
-html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
-#game-container { width: 100vw; height: 100vh; }
-canvas { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+:root { --bg:#1a1f2a; --fg:#dbe7ff; --crt:#90ffa8; --muted:#8e97ad; }
+*{box-sizing:border-box;font-family: 'Courier New', monospace}https://github.com/Thevaultboy11/game-body-art/pull/2/conflict?name=index.html&base_oid=370f7bbe676e098ae537c896f3144cd97c35dbdf&head_oid=d23c9dd1ee3fc0173ad3b05a9689d3e6291a5ce3
+body{margin:0;background:#0f121a;color:var(--fg)}
+#app{display:flex;min-height:100vh}
+#world-panel{position:relative;flex:2;display:flex;justify-content:center;align-items:center;background:#1d2433}
+#game{width:100%;height:100vh;max-height:100vh;image-rendering:pixelated;background:#7dd7ff}
+#hud-top{position:absolute;top:8px;left:8px;background:#0009;padding:6px 10px;font-size:12px}
+#dashboard{flex:1;max-width:34vw;min-width:320px;border-left:3px solid #2f3b50;padding:12px;background:#0e1118}
+#dashboard h1{font-size:20px;margin:0 0 8px}
+.screen{border:2px solid #294133;padding:10px;min-height:360px;background:linear-gradient(#07210d,#030f08);color:var(--crt)}
+#dash-lines{white-space:pre-line;line-height:1.5}
+#dialogue{position:absolute;left:30px;right:30px;bottom:28px;background:#000d;border:2px solid #ffffff66;padding:12px}
+#npc-name{color:#ffe17a;margin-bottom:6px}
+#choices button{display:block;width:100%;margin-top:6px;background:#1a1f2a;color:#fff;border:1px solid #7584a8;padding:6px;text-align:left;cursor:pointer}
+#choices button:hover{background:#2b3551}
+.hidden{display:none}
+#analytics{margin-top:10px;background:#121723;border:1px solid #2a3550;padding:10px}
+#analytics h2{margin:0 0 8px;font-size:16px}
+#analytics-list{max-height:190px;overflow:auto;padding-left:18px;margin:0;font-size:13px;color:#bfcae2}
+#ending{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#000f;color:#90ffa8;font-size:26px;text-align:center;padding:24px}

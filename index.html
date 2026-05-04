@@ -3,12 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Accumulation - MVP Movement</title>
+  <title>THE ACCUMULATION</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
 </head>
 <body>
-  <div id="game-container"></div>
+  <div id="app">
+    <div id="world-panel">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div id="hud-top">A/D or ←/→ move • W/↑/Space jump • E interact • Tab analytics</div>
+      <div id="dialogue" class="hidden">
+        <div id="npc-name"></div>
+        <div id="dialogue-text"></div>
+        <div id="choices"></div>
+      </div>
+      <div id="ending" class="hidden"></div>
+    </div>
+    <aside id="dashboard">
+      <h1>THE ACCUMULATION</h1>
+      <div class="screen">
+        <div id="dash-lines"></div>
+      </div>
+      <div id="analytics" class="hidden">
+        <h2>Analytics Log</h2>
+        <ul id="analytics-list"></ul>
+      </div>
+    </aside>
+  </div>
   <script src="game.js"></script>
 </body>
 </html>
