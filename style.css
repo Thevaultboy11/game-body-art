@@ -1,5 +1,5 @@
 :root { --bg:#1a1f2a; --fg:#dbe7ff; --crt:#90ffa8; --muted:#8e97ad; }
-*{box-sizing:border-box;font-family: 'Courier New', monospace}
+*{box-sizing:border-box;font-family: 'Courier New', monospace}https://github.com/Thevaultboy11/game-body-art/pull/2/conflict?name=index.html&base_oid=370f7bbe676e098ae537c896f3144cd97c35dbdf&head_oid=d23c9dd1ee3fc0173ad3b05a9689d3e6291a5ce3
 body{margin:0;background:#0f121a;color:var(--fg)}
 #app{display:flex;min-height:100vh}
 #world-panel{position:relative;flex:2;display:flex;justify-content:center;align-items:center;background:#1d2433}
